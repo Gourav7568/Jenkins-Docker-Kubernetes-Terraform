@@ -24,7 +24,7 @@ variable "resource_group_name" {
 }
 
 variable "acr_name" {
-  default = "acrrathore01" 
+  default = "acrsharma01" 
 }
 
 variable "aks_cluster_name" {
