@@ -16,7 +16,7 @@ spec:
         - name: dotnet-api
           image: acrsharma01.azurecr.io/webapidocker1:latest
           ports:
-            - containerPort: 8080
+            - containerPort: 8083   # ✅ fixed port here
 ---
 apiVersion: v1
 kind: Service
@@ -29,4 +29,4 @@ spec:
   ports:
     - protocol: TCP
       port: 80
-      targetPort: 8080
+      targetPort: 8083   # ✅ fixed targetPort here
